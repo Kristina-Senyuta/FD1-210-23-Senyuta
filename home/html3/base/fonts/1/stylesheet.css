@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('Caveat-Medium.eot');
+    src: url('Caveat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Caveat-Medium.woff2') format('woff2'),
+        url('Caveat-Medium.woff') format('woff'),
+        url('Caveat-Medium.ttf') format('truetype'),
+        url('Caveat-Medium.svg#Caveat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
