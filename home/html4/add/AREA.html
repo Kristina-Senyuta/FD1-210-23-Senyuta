@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AREA</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <img src="map-tag.webp" usemap="#teg map" alt="Тег Map">
+        <map name="teg map">
+            <area shape="rect" coords="0,250,1080,450" href="http://htmlbook.ru/html/map" target="_blank" alt="Тег Map">
+        </map>
+    </div>
+    <p style="font-family: cursive; font-size: 20px; text-align: center;">Нажмите на картинку, чтобы узнать информацию о
+        теге Map.</p>
+
+    <h3 style="font-family: cursive; text-align: center;">Описание элемента &lt;area&gt;</h3>
+    <p style="font-family: cursive; font-size: 20px; text-align: center;">Каждый элемент &lt;area&gt; определяет
+        активные области изображения, которые являются ссылками. Рисунок с привязанными к
+        нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не
+        отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где
+        каждая из
+        областей служит ссылкой. Тег &lt;area&gt; задает форму области, ее размеры, устанавливает адрес документа, на
+        который
+        следует сделать ссылку, а также имя окна или фрейма, куда браузер будет загружать документ. Этот тег всегда
+        располагается в контейнере &lt;map&gt;, который связывает координаты областей с изображением. Несколько областей
+        могут перекрывать друг друга, сверху будет та, которая в коде HTML располагается выше.
+        <br><br>Рассмотрим возможности (атрибуты) тега &lt;area&gt;.
+    </p>
+
+    <div style="text-align: center;">
+        <img src="post1.png" usemap="#atribyty" alt="Атрибуты">
+        <map name="atribyty">
+            <area shape="rect" coords="160,40,280,150" href="http://htmlbook.ru/html/area/accesskey" target="_blank"
+                alt="accesskey">
+            <area shape="rect" coords="530,25,680,145" href="http://htmlbook.ru/html/area/alt" target="_blank"
+                alt="alt">
+            <area shape="rect" coords="17,230,110,340" href="http://htmlbook.ru/html/area/href" target="_blank"
+                alt="href">
+            <area shape="rect" coords="170,235,280,360" href="http://htmlbook.ru/html/area/target" target="_blank"
+                alt="target">
+            <area shape="rect" coords="320,230,460,360" href="http://htmlbook.ru/html/area/coords" target="_blank"
+                alt="coords">
+            <area shape="rect" coords="530,230,680,370" href="http://htmlbook.ru/html/area/type" target="_blank"
+                alt="type">
+            <area shape="rect" coords="720,230,910,370" href="http://htmlbook.ru/html/area/hreflang" target="_blank"
+                alt="hreflang">
+            <area shape="rect" coords="160,425,260,550" href="http://htmlbook.ru/html/area/nohref" target="_blank"
+                alt="nohref">
+            <area shape="rect" coords="330,420,470,550" href="http://htmlbook.ru/html/area/shape" target="_blank"
+                alt="shape">
+            <area shape="rect" coords="710,450,890,600" href="http://htmlbook.ru/html/area/tabindex" target="_blank"
+                alt="tabindex">
+        </map>
+    </div>
+
+    <h3 style="font-family: cursive; text-align: center;">Пример использования</h3>
+    <p style="font-family: cursive; font-size: 20px; text-align: center;">Рассмотрим пример, в котором при клике
+        по определённой фигуре на одном рисунке происходит переход на разные веб-страницы, которые описывают эти фигуры
+        (ссылки на Википедию):</p>
+    <div style="text-align: center;">
+        <img src="код.png" alt="Код">
+    </div>
+    <p style="font-family: cursive; font-size: 20px; text-align: justify;">В этом примере:
+    <ul style="font-family: cursive; font-size: 20px; text-align: justify;">
+        <li>Разместили изображение (тег &lt;img&gt;), которое мы в последствии будем использовать при составлении
+            изображении-карты. В атрибуте usemap необходимо обязательно указать имя изображения-карты, которое мы будем
+            использовать в элементе &lt;map&gt; (необходимо обязательно перед именем указать решетку).</li>
+        <li>Размещаем изображение-карту (тег &lt;map&gt;), задаем единственный и обязательный атрибут элемента name
+            (имя). Обратите внимание, что в отличие от тега &lt;img&gt; мы задаем имя без решетки, в остальном они
+            должны
+            совпадать.</li>
+        <li>Размещаем четыре тега &lt;area&gt;, которые определяют интерактивные области в изображении-карте:
+            Первой мы задаем прямоугольную область (атрибут shape со значением "rect" ), она соответствует нашему
+            первому изображению (первые два значения соответствуют верхнему левому углу, следующие два значения
+            определяют правый верхний и нижний угол). <br>
+            Второй указываем круглую область (атрибут shape со значением "circle" ), она соответствует нашему
+            второму изображению (первое значение соответствует координатам по оси x, а второе по оси y, третее
+            определяет радиус). <br>
+            Что касается третей и четвертой фигуры, то они составлены по принципу многоугольной области (атрибут
+            shape со значением "poly" ). Вы определяете необходимое количество точек на изображении, высчитываете
+            координаты этих точек (графический редактор) и указываете в таком порядке, чтобы браузер их мог
+            соединить одной линией. На примере треугольника (третий рисунок): первая точка (координаты x и y
+            вершины), вторая точка (координаты x и y левого нижнего угла) и третяя точка (координаты x и y правого
+            нижнего угла).</li>
+    </ul>
+    </p>
+    <p style="font-family: cursive; font-size: 20px; text-align: justify;">Если у тега
+        &lt;area&gt; используется атрибут href, который определяет гиперссылку на площади, то необходимо обязательно 
+        указывать атрибут alt (альтернативный текст для области).
+       <br> Результат нашего примера в браузере (кликабельно):</p>
+    
+    <div style="text-align: center;">
+        <img src="код2.png" alt="Код">
+    </div>
+
+</body>
+
+</html>
