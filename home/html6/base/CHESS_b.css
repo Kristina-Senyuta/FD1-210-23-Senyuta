@@ -1,0 +1,22 @@
+h3{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dr{
+    color: green;
+}
+
+.chempion{
+    color: red;
+    font-weight: bold;
+}
+
+.osnova{
+    font-style: italic; color: blue;
+}
+
+p a::before{
+    content: url('extref.png');
+    margin-right: 5px;
+}
