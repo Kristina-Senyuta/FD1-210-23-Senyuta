@@ -1,0 +1,23 @@
+h3{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dr{
+    color: green;
+}
+
+.chempion{
+    color: red;
+    font-weight: bold;
+}
+
+.osnova{
+    font-style: italic; color: blue;
+}
+
+div {
+    background: url('extref.png') left center no-repeat;
+    padding-left: 15px;
+  
+}
