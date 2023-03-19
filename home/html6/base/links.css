@@ -1,0 +1,72 @@
+.var1{
+    font-size: 20px;
+}
+.var1 a {
+    color: green;
+    padding: 10px;
+    border-right: solid red 3px;
+}
+.var1 a:last-child{
+    border-right: none;
+}
+.var1 a:hover{
+    color: red;
+}
+
+.var2{
+    font-size: 20px;
+}
+.var2 a {
+    color: green;
+    padding: 10px;
+}
+.var2 a::before{
+    content: "";
+    border-left: solid red 3px;
+    padding-left: 25px;
+}
+.var2 a:first-child::before{
+   content: none;
+}
+.var2 a:hover{
+    color: red;
+}
+
+.var3{
+    font-size: 20px;
+}
+.var3 li {
+    color: green;
+    padding: 10px;
+    border-right: solid red 3px;
+}
+.var3 li a{
+    color: green;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 500px;
+    
+}
+
+.var3 li:last-child{
+    border-right: none;
+}
+/* .var2 a::before{
+    content: "";
+    border-left: solid red 3px;
+    padding-left: 25px;
+} */
+/* .var2 a:first-child::before{
+   content: none;
+} */
+.var3 a:hover{
+    color: red;
+}
+
+
+
