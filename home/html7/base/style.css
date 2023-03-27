@@ -1,0 +1,110 @@
+.header{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    background-color: rgb(142, 142, 253);
+    color: rgb(64, 1, 124);
+}
+
+.osnova{
+    background-color: yellow;
+}
+.menu{
+    width: 240px;
+    height: 100%;
+    float: left;
+}
+
+.menu p{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu ul{
+    font-size: 30px;
+}
+.content{
+    font-size: 30px;
+    margin-left: 250px;
+    background: url('boll.png') right top repeat-y,
+    url('white.png') top repeat-y;
+}
+.content h3{
+    text-align:center;
+    margin-top: 0px;
+}
+.content img{
+    float:left;
+    width: 200px;
+    margin: 0px 20px 20px 20px;
+}
+.toop{
+    clear: both;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    background-color: rgb(142, 142, 253);
+    color: rgb(64, 1, 124);
+}
+
+@media all and (max-width: 880px){
+    .header{
+        font-size: 30px;
+    }
+    .toop{
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 680px){
+    .header{
+        font-size: 20px;
+    }
+    .toop{
+        font-size: 20px;
+    }
+    .content img{
+        float:none;
+        width: 250px;
+        
+    }
+}
+
+@media all and (max-width: 550px){
+    
+    
+    .menu{
+       float: none;
+       margin-left: auto;
+    margin-right: auto;
+       text-align: center;
+    }
+    .content{
+        font-size: 20px;
+        margin-left: 0px;
+       }
+       .header{
+       font-size: 20px;
+       margin-bottom: -15px;
+        }
+    .menu{
+        width: 200px;
+            }
+.menu p{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+.menu ul{
+        font-size: 15px;
+    }
+.content img{
+        float:left;
+        width: 200px;
+        margin: 0px 20px 20px 20px;
+    }
+.toop{
+        font-size: 20px;
+        }
+
+
+}
