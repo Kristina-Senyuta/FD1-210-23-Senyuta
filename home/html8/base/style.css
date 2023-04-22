@@ -1,0 +1,54 @@
+body {
+    font-size: 20px;
+}
+
+label p {
+    float: left;
+    margin: 0;
+}
+
+.name {
+    margin-left: 220px;
+    margin-bottom: -20px;
+    width: 83%;
+}
+
+textarea,
+[type="text"] {
+    width: 100%;
+}
+
+select {
+    margin-left: 140px;
+}
+
+[type="radio"]:first-of-type {
+    margin-left: 112px;
+}
+
+
+@media all and (max-width: 900px){
+   
+    label p {
+        float: none;
+       }
+       .name {
+        margin-left: 0px;
+        width: 100%;
+    }
+   
+    select {
+        display: block;
+        margin-left: 0px;
+    }
+    
+    [type="radio"]:first-of-type {
+       
+        margin-left: 0px;
+    }
+    .publ{
+        display: block;
+        margin-top: -18px;
+    }
+
+}
