@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A IF</title>
+</head>
+
+<body>
+    <script>
+        var name1 = prompt('Введите вашу фамилию:');
+        while (true) {
+            if (name1 === "" || name1 === "null" || !isNaN(parseInt(name1))) {
+                name1 = prompt('Введите фамилию корректно:');
+                continue;
+            }
+            break;
+        }
+
+       
+        var name = prompt('Введите ваше имя:');
+        while (true) {
+            if (name === "" || name === "null" || !isNaN(parseInt(name))) {
+                name = prompt('Введите имя корректно:');
+                continue;
+            }
+            break;
+        }
+
+
+        var name2 = prompt('Введите вашуе отчество:');
+        while (true) {
+            if (name2 === "" || name2 === "null" || !isNaN(parseInt(name2))) {
+                name2 = prompt('Введите отчество корректно:');
+                continue;
+            }
+            break;
+        }
+
+
+        var ageStr = prompt('Введите ваш возраст в годах:');
+        var age = parseInt(ageStr);
+        while (true) {
+            if (age === "" || age <= 0 || age === "null" || isNaN(parseInt(age))) {
+                age = prompt('Введите возраст корректно:');
+                continue;
+            }
+            break;
+        }
+
+
+
+        
+        // if (gender == true) { gender = 'мужской' }
+        // else { gender = 'женский' };
+
+
+        var gender = confirm('Ваш пол мужской?');
+        gender == true ? gender = 'мужской' : gender = 'женский'
+
+        //         var pens ;
+        // if ((gender==='женский') && (age>=58))
+        // pens='Да';
+        //  else if ((gender==='женский') && (age<58))
+        // pens='Нет';
+        // else if ((gender==='мужской') && (age>=63))
+        // pens='Да';
+        // else  
+        // pens='Нет';
+
+
+        var pens;
+        gender === 'женский' ? age >= 58 ? pens = 'Да' : pens = 'Нет' : age >= 63 ? pens = 'Да' : pens = 'Нет'
+
+
+        // var pens;
+        // if (gender === 'женский') {
+        //     if (age >= 58) { pens = 'Да' }
+        //     else { pens = 'Нет' }
+        // }
+        // else {
+        //     if (age >= 63) { pens = 'Да' }
+        //     else { pens = 'Нет' }
+        // };
+
+
+        var res = `ваше ФИО: ${name1} ${name} ${name2}
+        ваш возраст в годах: ${age}
+        ваш возраст в днях: ${age * 365}
+        через 5 лет вам будет: ${age + 5}
+        ваш пол: ${gender}
+        вы на пенсии: ${pens}`
+
+
+        alert(res)
+
+
+
+
+    </script>
+</body>
+
+</html>
