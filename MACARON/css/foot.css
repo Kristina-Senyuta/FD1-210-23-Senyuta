@@ -1,0 +1,128 @@
+.fot {
+    position: relative;
+    width: 1440px;
+    height: 318px;
+    left: 0px;
+    background: #EBEDEE;
+}
+
+.footer {
+    position: absolute;
+    height: 318px;
+    width: 1440px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 58px;
+}
+
+.footer li {
+    width: 171px;
+    height: 100px;
+}
+
+.footer h4 {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #292929;
+
+}
+
+.footer p {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #292929;
+
+}
+
+.footer ul li:nth-of-type(1) {
+    flex-grow: 0.5;
+}
+
+.footer li:nth-of-type(5) {
+    text-align: end;
+}
+
+.footer>p {
+    position: absolute;
+    left: 134px;
+    top: 189px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #292929;
+    opacity: 0.7;
+}
+.footer a{
+    text-decoration: none;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #292929;
+}
+
+.footer ul ul {
+    margin-top: 0px;
+    width: 330px;
+    margin-left: 130px;
+}
+
+.footer ul ul li {
+    text-align: center;
+
+}
+
+.footer ul ul li:nth-of-type(1) {
+    flex-grow: 0;
+}
+
+
+.footer ul ul li p {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    text-align: center;
+    color: #292929;
+}
+.footer>ul>li:nth-of-type(2) {
+    margin-right: -20px;
+}
+.footer>ul>li:nth-of-type(3) {
+    margin-right: -20px;
+}
+.footer>ul>li:nth-of-type(4) {
+    margin-right: -20px;
+}
+.footer>ul>li:nth-of-type(5) {
+    margin-right: 110px;
+}
+.footer>a:nth-of-type(1) {
+    position: absolute;
+    left: 1148px;
+    top: 172px;
+}
+
+.footer>a:nth-of-type(2) {
+    position: absolute;
+    left: 1206px;
+    top: 172px;
+}
+
+.footer>a:nth-of-type(3) {
+    position: absolute;
+    left: 1264px;
+    top: 172px;
+}
+

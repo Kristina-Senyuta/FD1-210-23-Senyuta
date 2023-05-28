@@ -1,0 +1,86 @@
+@media all and (max-width: 320px) {
+
+    .container {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .header2 {
+        height: 59px;
+        position: relative;
+        background-image: image("../img/media/head1.png");
+
+    }
+
+    .header2 ul li {
+        display: none;
+    }
+
+    .header2 ul:first-of-type {
+        background: url("../img/media/humb.png");
+        background-repeat: no-repeat;
+        left: 60px;
+
+    }
+
+    .header2 ul:last-of-type {
+        background: url("../img/media/cor1.png");
+        background-repeat: no-repeat;
+        right: 60px;
+        background-position: right;
+
+    }
+
+    .header3 {
+        display: none;
+    }
+
+    .all {
+        height: 673px;
+    }
+
+    .contacts p:nth-of-type(1) {
+        left: 16px;
+        top: 67px;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+
+    }
+
+    .contacts a {
+        line-height: 11px;
+    }
+
+    .cont {
+        left: 77px;
+        top: 497px;
+
+    }
+
+    .contacts h2 {
+        /* width: 272px;
+        height: 29px; */
+        left: 24px;
+        top: 111px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .contacts h5 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        left: 15px;
+        top: 164px;
+    }
+    .contacts h5:nth-of-type(2) {
+        top: 264px;
+    }
+    
+    .contacts h5:nth-of-type(3) {
+        top: 376px;
+    }
+}

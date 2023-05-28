@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    height: 10000px;
+
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header2 {
+    background: #F7EBE5;
+    height: 48px;
+    position: relative;
+    width: 1440px;
+}
+
+.header2 ul:first-of-type {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.79);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    list-style-type: none;
+    position: absolute;
+    width: 465px;
+    height: 17px;
+    left: 135px;
+    top: 15px;
+}
+
+.header2 a {
+    text-decoration: none;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.79);
+}
+
+.header2 ul:last-of-type {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.88);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 43px;
+    list-style-type: none;
+    position: absolute;
+    width: 660px;
+    height: 24px;
+    left: 676px;
+    top: 12px;
+}
+
+.header2 img {
+    position: relative;
+    top: 5px;
+}
+
+.header2 [src*='down'] {
+    top: 0px;
+}
+
+
+.header3 {
+    height: 160px;
+
+}
+
+.rotateIn {
+    animation: rotateIn 3s infinite;
+    position: relative;
+    left: 658px;
+    top: 19px;
+}
+
+
+@keyframes rotateIn {
+    from {
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.header3 ul li img {
+    position: absolute;
+    left: 22.22%;
+    right: 72.65%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.header3 li {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2B1414;
+}
+
+.header3 ul:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    position: absolute;
+    width: 468px;
+    height: 24px;
+    left: 160px;
+    top: 114px;
+    list-style-type: none;
+}
+
+.header3 ul:last-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    width: 399px;
+    height: 17px;
+    left: 812px;
+    top: 119px;
+    list-style-type: none;
+}
+
+
+.all {
+    position: relative;
+    width: 1440px;
+    height: 920px;
+    top: 0px;
+    background: #F7F7F7;
+}
+
+.contacts p:nth-of-type(1) {
+    position: absolute;
+    width: 126px;
+    height: 17px;
+    left: 657px;
+    top: 41px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: rgba(78, 157, 211, 1);
+}
+
+.contacts a {
+    text-decoration: none;
+    color: rgba(41, 41, 41, 0.46);
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.cont {
+    position: absolute;
+    width: 379.18px;
+    height: 434px;
+    left: 222px;
+    top: 82px;
+    animation: cont 3s infinite;
+}
+
+@keyframes cont {
+
+    from,
+    20%,
+    53%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+        transform: translate3d(0, -30px, 0) scaleY(1.1);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+        transform: translate3d(0, -15px, 0) scaleY(1.05);
+    }
+
+    80% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+        transform: translate3d(0, 0, 0) scaleY(0.95);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+        transform: translate3d(0, -4px, 0) scaleY(1.02);
+    }
+}
+
+.contacts h2 {
+    position: absolute;
+    width: 214px;
+    height: 51px;
+    left: 735px;
+    top: 105px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    color: #292929;
+}
+
+.contacts h5 {
+    position: absolute;
+    width: 228px;
+    height: 30px;
+    left: 735px;
+    top: 186px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #292929;
+}
+
+.contacts h5:nth-of-type(2) {
+    top: 307px;
+}
+
+.contacts h5:nth-of-type(3) {
+    top: 486px;
+}
+
+.contacts p:nth-of-type(2) {
+    position: absolute;
+    width: 470px;
+    height: 58px;
+    left: 735px;
+    top: 221px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #292929;
+    opacity: 0.9;
+}
+
+.contacts p:nth-of-type(3) {
+
+    position: absolute;
+    width: 470px;
+    height: 58px;
+    left: 735px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #292929;
+    opacity: 0.9;
+    top: 342px;
+}
+
+.contacts p:nth-of-type(4) {
+    position: absolute;
+    width: 470px;
+    height: 58px;
+    left: 735px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #292929;
+    opacity: 0.9;
+    top: 521px;
+}
+
+
+
+
+.fot {
+    top: 661px;
+
+}

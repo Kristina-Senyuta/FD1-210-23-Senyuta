@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    height: 10000px;
+
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header2 {
+    background: #F7EBE5;
+    height: 48px;
+    position: relative;
+    width: 1440px;
+}
+
+.header2 ul:first-of-type {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.79);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    list-style-type: none;
+    position: absolute;
+    width: 465px;
+    height: 17px;
+    left: 135px;
+    top: 15px;
+}
+.header2 a{
+    text-decoration: none;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.79);
+}
+
+.header2 ul:last-of-type {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.88);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 43px;
+    list-style-type: none;
+    position: absolute;
+    width: 660px;
+    height: 24px;
+    left: 676px;
+    top: 12px;
+}
+
+.header2 img 
+{
+    position: relative;
+    top: 5px;
+}
+.header2 [src*='down']{
+top: 0px;
+}
+
+
+.header3 {
+    height: 160px;
+
+}
+
+.rotateIn{
+    animation: rotateIn 3s infinite;
+    position: relative;
+     left: 658px;
+     top: 19px;
+ }
+ 
+ 
+ @keyframes rotateIn {
+     from {
+       -webkit-transform: rotate3d(0, 0, 1, -200deg);
+       transform: rotate3d(0, 0, 1, -200deg);
+       opacity: 0;
+     }
+   
+     to {
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0);
+       opacity: 1;
+     }
+   }
+
+.header3 ul li img {
+    position: absolute;
+    left: 22.22%;
+    right: 72.65%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.header3 li {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2B1414;
+}
+
+.header3 ul:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    position: absolute;
+    width: 468px;
+    height: 24px;
+    left: 160px;
+    top: 114px;
+    list-style-type: none;
+}
+
+.header3 ul:last-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    width: 399px;
+    height: 17px;
+    left: 812px;
+    top: 119px;
+    list-style-type: none;
+}
+
+
+.all {
+    position: relative;
+    width: 1440px;
+    height: 662px;
+    top: 0px;
+    background: #F7F7F7;
+}
+
+.quality p:nth-of-type(1){
+    position: absolute;
+width: 237px;
+height: 17px;
+left: 602px;
+top: 41px;
+font-family: 'Proxima Nova Lt';
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: rgba(78, 157, 211, 1);
+}
+.quality a{
+    text-decoration: none;
+    color: rgba(41, 41, 41, 0.46);
+}
+
+.quality h2{
+    position: absolute;
+width: 526px;
+height: 45px;
+left: 457px;
+top: 80px;
+font-family: 'Montserrat';
+font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+color: #292929;
+}
+
+.quality p:nth-of-type(2){
+    position: absolute;
+width: 663px;
+height: 81px;
+left: 389px;
+top: 151px;
+font-family: 'Proxima Nova Lt';
+font-weight: 400;
+font-size: 18px;
+line-height: 130%;
+text-align: center;
+color: #292929;
+}
+.quality ul{
+   position: relative;
+   top: 246px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+.quality ul li{
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 270px;
+    height: 270px;
+}
+
+ .all .quality ul li p{
+    position: absolute;
+    font-family: 'Montserrat';
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #292929;
+width: 270px;
+top: auto;
+left: auto;
+margin-top: 22px;
+}
+
+/* .all .quality ul p:nth-of-type(3){
+    left: 285px;
+    top: 292px;
+}
+.all .quality ul p:nth-of-type(4){
+    left: 585px;
+    top: 292px;
+}
+.all .quality ul p:nth-of-type(5){
+    left: 885px;
+    top: 292px;
+} */
+
+
+
+
+
+
+.fot {
+    top: 388px;
+    
+}
+
